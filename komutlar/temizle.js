@@ -6,9 +6,9 @@ exports.run = function(client, message, args) {
   }
   let mesajsayisi = parseInt(args.join(' '));
   if (mesajsayisi.length < 1) return message.channel.send('Kaç mesaj silmem gerektiğini belirtmedin.')
-  if (mesajsayisi > 1000) return message.channel.send('1000 adetden fazla mesaj silemem!');
+  if (mesajsayisi > 500) return message.channel.send('500 adetden fazla mesaj silemem!');
   message.channel.bulkDelete(mesajsayisi + 1);
-  message.channel.send(mesajsayisi +' adet mesaj sildim!')
+  message.channel.send(mesajsayisi +' adet mesaj silindi :heavy_check_mark:')
 };
 
 exports.conf = {
