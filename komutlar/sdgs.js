@@ -8,12 +8,12 @@ exports.run = async (client, message) => {
             color: 0x00AE86,
             description: `${message.author.tag}Adli Reyiz bir stres çarkı çevirdi!`,
             image: {
-                url: "https://i.imgur.com/KJJxVi4.gif"
+                url: "http://c10.haberself.com/res/haberself/59/4/261154_o5c20.gif"
             }
         }
     });
 
-    let bitiş = (Math.random() * (60 - 5 +1)) + 5;
+    let bitiş = (Math.random() * (120 - 5 +1)) + 5;
     setTimeout(() => {
         dönme.edit({
             embed: {
