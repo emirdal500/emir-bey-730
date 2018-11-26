@@ -6,14 +6,14 @@ exports.run = async (client, message) => {
     let dönme = await message.channel.send({
         embed: {
             color: 0x00AE86,
-            description: `${message.author.tag} bir stres çarkı çevirdi!`,
+            description: `${message.author.tag}Adli Reyiz bir stres çarkı çevirdi!`,
             image: {
-                url: "http://c10.haberself.com/res/haberself/59/4/261154_o5c20.gif"
+                url: "https://i.imgur.com/KJJxVi4.gif"
             }
         }
     });
 
-    let bitiş = (Math.random() * (120 - 5 +1)) + 5;
+    let bitiş = (Math.random() * (60 - 5 +1)) + 5;
     setTimeout(() => {
         dönme.edit({
             embed: {
@@ -33,6 +33,6 @@ exports.conf = {
 
 exports.help = {
   name: 'stresçarkı', 
-  description: 'Sizin için bir stres çarkı çevirir.',
+  description: 'Stres Çarkınla Meydan Oku!',
   usage: 'stresçarkı'
 };
